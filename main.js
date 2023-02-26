@@ -3,7 +3,7 @@ text.textContent = "";
 const subText = document.querySelector(".subtext");
 subText.textContent = "";
 const button = document.querySelector("button");
-//button.addEventListener("click", number());
+
 let num1;
 let num2;
 let operator;
@@ -15,7 +15,6 @@ function number(num) {
         text.textContent = "";
         clearHelper--;
     }
-
     text.textContent += num;
 }
 
@@ -35,5 +34,26 @@ function calculate() {
     }
     if (operator === "+") {
         text.textContent = Number(num1) + Number(num2);
+        clearHelper++;
     }
+    if (operator === "-") {
+        text.textContent = Number(num1) - Number(num2);
+        clearHelper++;
+    }
+    if (operator === "*") {
+        text.textContent = Number(num1) * Number(num2);
+        clearHelper++;
+    }
+    if (operator === "/") {
+        text.textContent = Number(num1) / Number(num2);
+        clearHelper++;
+    }
+    num1 = 0;
+    num2 = 0;
+}
+
+function clearNums() {
+    text.textContent = "0";
+    subText.textContent = "";
+    clearHelper = 1;
 }
