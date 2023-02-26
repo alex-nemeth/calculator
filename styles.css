@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+<!--//420 913-->
 * {
     font-family: "Inter", sans-serif;
 }
@@ -20,29 +21,49 @@ body {
     height: 200px;
     background-color: black;
 }
-
 .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 400px;
-    background-color: sienna;
+    background-color: black;
 }
 
 button {
+    font-size: 30px;
     width: 80px;
     height: 80px;
     margin: 5px;
+    border-width: 1px;
     border-radius: 50%;
+    border-color: rgb(176, 176, 176);
+    background-color: #313131;
+    color: white;
 }
 
 .del {
     width: 170px;
     border-radius: 50px;
+    background-color: #9f9f9f;
+    color: black;
+}
+
+.modulo {
+    background-color: #9f9f9f;
+    color: black;
+}
+
+.divide,
+.addition,
+.subtract,
+.add,
+.equals {
+    background-color: orange;
 }
 
 .zero {
     width: 170px;
     border-radius: 50px;
+    justify-content: left;
 }
