@@ -6,18 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
         <script src="main.js" defer></script>
-        <title>this.Calculator</title>
+        <title>Simple Calculator</title>
     </head>
     <body>
-        <!--//420 913   313131 9f9f9f-->
         <div class="calculator">
             <div class="screen">
-                <div class="subtext">1+2</div>
+                <div class="subtext"></div>
                 <div class="text"></div>
             </div>
             <div class="buttons">
                 <button class="del" onclick="clearNums()">AC</button>
-                <button class="modulo">%</button>
+                <button class="modulo" onclick="operate('%')">%</button>
                 <button class="divide" onclick="operate('/')">÷</button>
                 <button class="seven" onclick="number('7')">7</button>
                 <button class="eight" onclick="number('8')">8</button>
@@ -32,9 +31,10 @@
                 <button class="three" onclick="number('3')">3</button>
                 <button class="add" onclick="operate('+')">+</button>
                 <button class="zero" onclick="number('0')">0</button>
-                <button class="decimal">.</button>
+                <button class="decimal" onclick="number('.')">.</button>
                 <button class="equals" onclick="calculate()">=</button>
             </div>
         </div>
+        <div class="footer">© Alex Németh 2023</div>
     </body>
 </html>

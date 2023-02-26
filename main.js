@@ -2,7 +2,6 @@ const text = document.querySelector(".text");
 text.textContent = "";
 const subText = document.querySelector(".subtext");
 subText.textContent = "";
-const button = document.querySelector("button");
 
 let num1;
 let num2;
@@ -46,6 +45,10 @@ function calculate() {
     }
     if (operator === "/") {
         text.textContent = Number(num1) / Number(num2);
+        clearHelper++;
+    }
+    if (operator === "%") {
+        text.textContent = (Number(num1) / Number(num2)) * 100;
         clearHelper++;
     }
     num1 = 0;
