@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-<!--//420 913-->
 * {
     font-family: "Inter", sans-serif;
 }
@@ -21,6 +20,19 @@ body {
     height: 200px;
     background-color: black;
 }
+
+.subtext {
+    color: white;
+    font-size: 36px;
+    text-align: end;
+}
+
+.text {
+    color: white;
+    font-size: 48px;
+    text-align: end;
+}
+
 .buttons {
     display: flex;
     flex-wrap: wrap;

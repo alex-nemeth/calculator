@@ -12,28 +12,28 @@
         <!--//420 913   313131 9f9f9f-->
         <div class="calculator">
             <div class="screen">
-                <div class="subText"></div>
+                <div class="subtext">1+2</div>
                 <div class="text"></div>
             </div>
             <div class="buttons">
                 <button class="del">AC</button>
                 <button class="modulo">%</button>
                 <button class="divide">÷</button>
-                <button class="seven">7</button>
-                <button class="eight">8</button>
-                <button class="nine">9</button>
+                <button class="seven" onclick="number('7')">7</button>
+                <button class="eight" onclick="number('8')">8</button>
+                <button class="nine" onclick="number('9')">9</button>
                 <button class="addition">✖</button>
-                <button class="four">4</button>
-                <button class="five">5</button>
-                <button class="six">6</button>
+                <button class="four" onclick="number('4')">4</button>
+                <button class="five" onclick="number('5')">5</button>
+                <button class="six" onclick="number('6')">6</button>
                 <button class="subtract">-</button>
-                <button class="one">1</button>
-                <button class="two">2</button>
-                <button class="three">3</button>
-                <button class="add">+</button>
-                <button class="zero">0</button>
+                <button class="one" onclick="number('1')">1</button>
+                <button class="two" onclick="number('2')">2</button>
+                <button class="three" onclick="number('3')">3</button>
+                <button class="add" onclick="operate('+')">+</button>
+                <button class="zero" onclick="number('0')">0</button>
                 <button class="decimal">.</button>
-                <button class="equals">=</button>
+                <button class="equals" onclick="calculate()">=</button>
             </div>
         </div>
     </body>
